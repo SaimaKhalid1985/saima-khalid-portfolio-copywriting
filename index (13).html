@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Saima Khalid — Direct Response Copywriter &amp; Funnel Builder</title>
+<meta name="description" content="Psychology-first DR copywriter for DTC and ecommerce. Strategy, copy, and coded HTML delivered by one person. No handoffs. No agencies.">
+<meta property="og:title" content="Saima Khalid — Direct Response Copywriter">
+<meta property="og:description" content="The algorithm found the right person. The copy was the one that lost them.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Ethiopic:wght@700;900&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+<style>
+/* ─── TOKENS ─────────────────────────────────────────────────────────── */
+:root {
+  --v:    #3801AD;
+  --vd:   #2A0090;
+  --vdd:  #1A0062;
+  --mag:  #E43FFF;
+  --gold: #FBA119;
+  --w:    #FFFFFF;
+  --t1:   #FFFFFF;
+  --t2:   rgba(255,255,255,.86);
+  --t3:   rgba(255,255,255,.56);
+  --card: rgba(0,0,0,.18);
+  --cardhv: rgba(0,0,0,.28);
+  --brd:  rgba(255,255,255,.10);
+  --brdm: rgba(228,63,255,.40);
+  --brdg: rgba(251,161,25,.30);
+  --grd:  linear-gradient(135deg,#3801AD 0%,#6600CC 40%,#A000C8 70%,#E43FFF 100%);
+  --grd3: linear-gradient(90deg,#3801AD,#E43FFF,#FBA119);
+  --fh:   'Noto Serif Ethiopic', serif;
+  --fb:   'Public Sans', sans-serif;
+  --r:    6px;
+  --nav-h: 68px;
+}
+
+/* ─── RESET ──────────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--vdd);
+  color: var(--t1);
+  font-family: var(--fb);
+  font-size: 1.0625rem;
+  font-weight: 500;
+  line-height: 1.78;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+a { color: inherit; text-decoration: none; }
+button { font-family: var(--fb); cursor: pointer; }
+img { max-width: 100%; display: block; }
+.col  { max-width: 760px;  margin: 0 auto; padding: 0 32px; }
+.wide { max-width: 1140px; margin: 0 auto; padding: 0 32px; }
+section { padding: 96px 0; }
+
+/* ─── TYPOGRAPHY ─────────────────────────────────────────────────────── */
+h1 {
+  font-family: var(--fh);
+  font-size: clamp(2.75rem, 6vw, 5rem);
+  font-weight: 700;
+  line-height: 1.05;
+  color: var(--t1);
+  letter-spacing: -0.01em;
+}
+h2 {
+  font-family: var(--fh);
+  font-size: clamp(1.875rem, 4vw, 3.25rem);
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--t1);
+  letter-spacing: -0.01em;
+}
+h3 {
+  font-family: var(--fh);
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--t1);
+}
+h4 {
+  font-family: var(--fb);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+p { font-family: var(--fb); color: var(--t2); line-height: 1.82; font-weight: 500; }
+.eyebrow {
+  display: inline-block;
+  font-family: var(--fb);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 20px;
+}
+.g { color: var(--gold); }
+.m { color: var(--mag); }
+.sh { margin-bottom: 60px; }
+.sh h2 { margin-bottom: 18px; }
+.sh p { color: var(--t2); max-width: 560px; font-size: 1.0625rem; }
+
+/* ─── BUTTONS (rectangular — section CTAs) ───────────────────────────── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--fb);
+  font-size: 0.8125rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border-radius: var(--r);
+  padding: 15px 36px;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+.btn-mag  { background: var(--mag); color: #08000F; box-shadow: 0 4px 24px rgba(228,63,255,.38); }
+.btn-mag:hover  { transform: translateY(-2px); box-shadow: 0 10px 44px rgba(228,63,255,.62); }
+.btn-ghost { background: transparent; color: var(--t1); border: 1.5px solid rgba(255,255,255,.25); }
+.btn-ghost:hover { border-color: var(--mag); color: var(--mag); }
+.btn-gold  { background: transparent; color: var(--gold); border: 1.5px solid rgba(251,161,25,.4); }
+.btn-gold:hover  { background: rgba(251,161,25,.08); }
+
+/* ─── HERO PILL BUTTONS ──────────────────────────────────────────────── */
+.btn-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--fb);
+  font-size: 0.8125rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-radius: 9999px;
+  padding: 15px 38px;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.22s ease, box-shadow 0.22s ease, background 0.22s ease, border-color 0.22s ease;
+}
+.btn-pill-mag {
+  background: var(--mag);
+  color: #08000F;
+  box-shadow: 0 4px 28px rgba(228,63,255,.45);
+}
+.btn-pill-mag:hover { transform: translateY(-2px); box-shadow: 0 12px 48px rgba(228,63,255,.7); }
+.btn-pill-ghost {
+  background: rgba(255,255,255,.09);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: var(--w);
+  border: 1px solid rgba(255,255,255,.22);
+}
+.btn-pill-ghost:hover { background: rgba(228,63,255,.16); border-color: rgba(228,63,255,.55); }
+
+/* ─── NAV — frosted glass, always active, rounded bottom ────────────── */
+#nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 500;
+  height: var(--nav-h);
+  background: rgba(6,0,21,.42);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255,255,255,.07);
+  border-radius: 0 0 20px 20px;
+  transition: background 0.35s ease;
+}
+#nav.dark { background: rgba(6,0,21,.82); }
+.nav-inner { height: 100%; display: flex; align-items: center; justify-content: space-between; }
+.nav-brand { display: flex; flex-direction: column; gap: 3px; }
+.nav-logo { font-family: var(--fb); font-size: 1.0625rem; font-weight: 800; color: var(--w); letter-spacing: -0.01em; line-height: 1.2; }
+.nav-tagline {
+  font-family: var(--fb);
+  font-size: 0.625rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, var(--mag) 0%, var(--gold) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.3;
+}
+.nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
+.nav-links a { font-family: var(--fb); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,.65); transition: color 0.2s; }
+.nav-links a:hover { color: var(--w); }
+.nav-cta-btn { background: var(--mag); color: #08000F !important; padding: 9px 22px; border-radius: 9999px; font-size: 0.75rem !important; box-shadow: 0 2px 16px rgba(228,63,255,.35); }
+.nav-cta-btn:hover { opacity: .88; }
+.nav-burger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 6px; }
+.nav-burger span { display: block; width: 24px; height: 2px; background: var(--w); border-radius: 2px; transition: transform 0.3s ease, opacity 0.3s ease; }
+.nav-drawer { position: fixed; top: 0; right: -100%; width: min(300px,85vw); height: 100vh; background: #060015; z-index: 600; padding: 80px 36px 40px; transition: right 0.35s cubic-bezier(.4,0,.2,1); border-left: 1px solid var(--brd); display: flex; flex-direction: column; gap: 28px; }
+.nav-drawer.open { right: 0; }
+.nav-drawer a { font-family: var(--fb); font-size: 1.125rem; font-weight: 700; color: var(--t2); border-bottom: 1px solid var(--brd); padding-bottom: 20px; transition: color 0.2s; }
+.nav-drawer a:hover, .nav-drawer a:last-child { color: var(--w); border-bottom: none; }
+.drawer-close { position: absolute; top: 22px; right: 22px; background: none; border: 1.5px solid var(--brd); color: var(--t3); border-radius: 50%; width: 36px; height: 36px; font-size: 1.1rem; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: border-color 0.2s, color 0.2s; }
+.drawer-close:hover { border-color: var(--mag); color: var(--mag); }
+.overlay { position: fixed; inset: 0; background: rgba(0,0,0,.55); z-index: 590; opacity: 0; pointer-events: none; transition: opacity 0.35s ease; }
+.overlay.show { opacity: 1; pointer-events: all; }
+
+/* ─── HERO — VIDEO BACKGROUND ────────────────────────────────────────── */
+.hero {
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background: var(--grd);
+  background-size: 200% 200%;
+  animation: gradshift 14s ease-in-out infinite alternate;
+  padding: calc(var(--nav-h) + 40px) 0 80px;
+}
+
+/* multi-layer brand tint overlay — keeps text readable, adds depth */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  /* violet brand wash */
+  background:
+    linear-gradient(135deg,
+      rgba(20, 0, 60, .70) 0%,
+      rgba(56, 1, 173, .48) 45%,
+      rgba(12, 0, 50, .68) 100%),
+    /* bottom vignette — blends into the page below */
+    linear-gradient(to bottom,
+      transparent 42%,
+      rgba(8, 0, 24, .92) 100%),
+    /* side vignettes — frame the text */
+    linear-gradient(to right,
+      rgba(8, 0, 24, .52) 0%,
+      transparent 32%,
+      transparent 68%,
+      rgba(8, 0, 24, .52) 100%);
+}
+
+/* subtle magenta glow behind the headline area */
+.hero-accent {
+  position: absolute;
+  top: 22%;
+  left: -8%;
+  width: 640px;
+  height: 640px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(228,63,255,.14) 0%, transparent 68%);
+  z-index: 2;
+  pointer-events: none;
+  filter: blur(40px);
+}
+
+/* content sits above overlay */
+.hero .col { position: relative; z-index: 3; }
+.hero h1 { margin-bottom: 28px; max-width: 720px; }
+.hero-sub { font-family: var(--fb); font-size: 1.125rem; font-weight: 500; color: rgba(255,255,255,.90); max-width: 560px; line-height: 1.8; margin-bottom: 44px; }
+.hero-btns { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 64px; }
+.hero-proof { display: flex; align-items: center; gap: 20px; padding-top: 28px; border-top: 1px solid rgba(255,255,255,.14); flex-wrap: wrap; }
+.proof-item { font-family: var(--fb); font-size: 0.75rem; font-weight: 700; color: rgba(255,255,255,.58); letter-spacing: 0.1em; text-transform: uppercase; display: flex; align-items: center; gap: 8px; }
+.proof-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--gold); flex-shrink: 0; }
+
+/* scroll cue */
+.scroll-cue { position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 8px; opacity: 0; animation: fadein 1s ease 1.2s forwards; z-index: 3; }
+.scroll-cue span { font-family: var(--fb); font-size: 0.6rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,.35); }
+.scroll-cue-line { width: 1px; height: 48px; background: linear-gradient(to bottom, rgba(255,255,255,.32), transparent); animation: scrollpulse 2s ease-in-out infinite; }
+@keyframes scrollpulse { 0%,100% { transform: scaleY(1); opacity: .5; } 50% { transform: scaleY(1.3); opacity: 1; } }
+@keyframes fadein { to { opacity: 1; } }
+
+/* ─── STATS ──────────────────────────────────────────────────────────── */
+.stats { background: var(--vdd); padding: 80px 0; }
+.bento { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 14px; }
+.bento-cell { background: rgba(255,255,255,.04); border: 1px solid var(--brd); border-radius: var(--r); padding: 36px 32px; transition: border-color 0.25s; }
+.bento-cell:hover { border-color: rgba(251,161,25,.28); }
+.bento-cell.featured { background: rgba(251,161,25,.05); border-color: rgba(251,161,25,.18); }
+.stat-num { font-family: var(--fb); font-size: clamp(2.5rem,5vw,4rem); font-weight: 800; color: var(--gold); line-height: 1; display: block; margin-bottom: 10px; }
+.stat-lbl { font-family: var(--fb); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--t3); line-height: 1.5; }
+.bento-lead p { font-family: var(--fb); font-size: 1.0625rem; font-weight: 600; color: var(--t2); line-height: 1.7; margin-top: 8px; }
+
+/* ─── PROBLEM ────────────────────────────────────────────────────────── */
+.problem { background: var(--v); }
+.problem-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
+.problem-left h2 { margin-bottom: 24px; }
+.problem-left p { margin-bottom: 16px; }
+.problem-cards { display: flex; flex-direction: column; gap: 14px; }
+.pcard { background: var(--card); border: 1px solid var(--brd); border-left: 3px solid rgba(228,63,255,.25); border-radius: var(--r); padding: 22px 24px; transition: border-left-color 0.25s, background 0.25s; cursor: default; }
+.pcard:hover { border-left-color: var(--mag); background: var(--cardhv); }
+.pcard h3 { margin-bottom: 7px; font-size: 1rem; }
+.pcard p { font-size: 0.9rem; color: var(--t3); line-height: 1.72; }
+
+/* ─── FAILED ─────────────────────────────────────────────────────────── */
+.failed { background: var(--vdd); }
+.fail-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; margin-top: 52px; }
+.fcard { background: var(--card); border: 1px solid var(--brd); border-radius: var(--r); padding: 32px 28px; transition: border-color 0.25s, transform 0.25s; cursor: default; }
+.fcard:hover { border-color: rgba(251,161,25,.3); transform: translateY(-3px); }
+.fnum { font-family: var(--fb); font-size: 3.5rem; font-weight: 800; color: var(--gold); line-height: 1; display: block; margin-bottom: 16px; }
+.fcard h3 { margin-bottom: 10px; font-size: 1.0625rem; }
+.fcard p { font-size: 0.9rem; color: var(--t3); line-height: 1.76; }
+.froot { margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--brd); font-family: var(--fb); font-size: 0.6rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(228,63,255,.5); }
+.fail-quote { margin-top: 52px; padding: 40px; background: rgba(228,63,255,.05); border: 1px solid rgba(228,63,255,.16); border-radius: var(--r); text-align: center; }
+.fail-quote blockquote { font-family: var(--fb); font-size: 1.25rem; font-weight: 600; font-style: italic; color: var(--t1); line-height: 1.7; max-width: 580px; margin: 0 auto 14px; }
+.fail-quote cite { font-family: var(--fb); font-size: 0.65rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); font-style: normal; }
+
+/* ─── PROCESS ────────────────────────────────────────────────────────── */
+.process { background: var(--vd); }
+.timeline { position: relative; margin-top: 56px; padding-left: 24px; }
+.timeline::before { content: ''; position: absolute; top: 18px; left: 23px; bottom: 18px; width: 1px; background: linear-gradient(to bottom, var(--mag), rgba(228,63,255,.08)); }
+.tl-item { position: relative; display: grid; grid-template-columns: 72px 1fr; gap: 28px; padding-bottom: 52px; align-items: start; }
+.tl-item:last-child { padding-bottom: 0; }
+.tl-marker { display: flex; flex-direction: column; align-items: center; position: relative; z-index: 1; }
+.tl-num { width: 46px; height: 46px; border-radius: 50%; background: var(--vd); border: 1.5px solid var(--mag); display: flex; align-items: center; justify-content: center; font-family: var(--fb); font-weight: 800; font-size: 1rem; color: var(--mag); flex-shrink: 0; }
+.tl-body { padding-top: 8px; }
+.tl-body h3 { margin-bottom: 10px; font-size: 1.125rem; }
+.tl-body p { font-size: 0.9375rem; color: var(--t2); line-height: 1.78; margin-bottom: 14px; }
+.tl-badge { display: inline-block; padding: 5px 14px; background: rgba(251,161,25,.08); border: 1px solid rgba(251,161,25,.22); border-radius: 3px; font-family: var(--fb); font-size: 0.6rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); }
+
+/* ─── NEURO ──────────────────────────────────────────────────────────── */
+.neuro { background: var(--vdd); }
+.brain-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; margin-bottom: 52px; }
+.bc { background: var(--card); border: 1px solid var(--brd); border-top: 2px solid var(--mag); border-radius: var(--r); padding: 30px 26px; transition: border-color 0.25s, transform 0.25s; }
+.bc:hover { border-color: var(--brdm); transform: translateY(-3px); }
+.bc-tag { font-family: var(--fb); font-size: 0.6rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--mag); display: block; margin-bottom: 12px; }
+.bc h3 { margin-bottom: 10px; font-size: 1rem; }
+.bc p { font-size: 0.875rem; color: var(--t3); line-height: 1.74; }
+.seq-box { background: rgba(228,63,255,.05); border: 1px solid rgba(228,63,255,.16); border-radius: var(--r); padding: 34px 36px; margin-bottom: 52px; }
+.seq-steps { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-top: 20px; }
+.sstep { flex: 1; min-width: 120px; text-align: center; background: rgba(255,255,255,.04); border: 1px solid var(--brd); border-radius: var(--r); padding: 16px 10px; }
+.sstep-n { font-family: var(--fb); font-weight: 800; font-size: 1.75rem; color: var(--mag); display: block; line-height: 1; margin-bottom: 8px; }
+.sstep-l { font-family: var(--fb); font-size: 0.65rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--t3); line-height: 1.5; }
+.sarrow { color: var(--gold); font-size: 1rem; flex-shrink: 0; }
+.chem-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 36px; }
+.cc { background: var(--card); border: 1px solid var(--brd); border-radius: var(--r); padding: 24px; display: flex; gap: 18px; align-items: flex-start; transition: border-color 0.25s; }
+.cc:hover { border-color: var(--brdm); }
+.cc-icon { width: 42px; height: 42px; border-radius: 50%; border: 1px solid rgba(228,63,255,.22); background: rgba(228,63,255,.08); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.cc-tag { font-family: var(--fb); font-size: 0.6rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); display: block; margin-bottom: 5px; }
+.cc h3 { margin-bottom: 7px; font-size: 0.9375rem; }
+.cc p { font-size: 0.875rem; color: var(--t3); line-height: 1.72; }
+
+/* ─── SERVICES ───────────────────────────────────────────────────────── */
+.services { background: var(--v); }
+.svc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 52px; }
+.sc { background: var(--card); border: 1px solid var(--brd); border-radius: var(--r); padding: 32px; transition: border-color 0.25s, box-shadow 0.25s; cursor: default; }
+.sc:hover { border-color: var(--brdm); box-shadow: 0 8px 36px rgba(228,63,255,.08); }
+.sc-tag { font-family: var(--fb); font-size: 0.6rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--mag); display: block; margin-bottom: 14px; }
+.sc h3 { margin-bottom: 10px; font-size: 1.0625rem; }
+.sc p { font-size: 0.9rem; color: var(--t3); line-height: 1.76; }
+.sc-del { margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--brd); font-family: var(--fb); font-size: 0.62rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); }
+
+/* ─── OFFERS ─────────────────────────────────────────────────────────── */
+.offers { background: var(--vd); }
+.offer-intro { margin-bottom: 52px; }
+.offer-intro p { font-size: 1.0625rem; color: var(--t2); line-height: 1.84; max-width: 660px; }
+.offer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.ofc { background: var(--card); border: 1px solid var(--brd); border-radius: var(--r); padding: 30px 28px; transition: border-color 0.25s, transform 0.25s; cursor: default; }
+.ofc:hover { border-color: var(--brdm); transform: translateY(-2px); }
+.ofc-tag { font-family: var(--fb); font-size: 0.6rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--mag); display: block; margin-bottom: 12px; }
+.ofc h3 { font-size: 1.0625rem; margin-bottom: 10px; }
+.ofc p { font-size: 0.875rem; color: var(--t3); line-height: 1.76; margin-bottom: 14px; }
+.price-badge { display: inline-block; padding: 5px 14px; background: rgba(251,161,25,.08); border: 1px solid rgba(251,161,25,.24); border-radius: 3px; font-family: var(--fb); font-size: 0.65rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); margin-right: 8px; margin-bottom: 6px; }
+.turn-badge { display: inline-block; padding: 5px 14px; background: rgba(228,63,255,.06); border: 1px solid rgba(228,63,255,.18); border-radius: 3px; font-family: var(--fb); font-size: 0.65rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(228,63,255,.75); }
+.offer-defaults { margin-top: 48px; padding: 36px; background: rgba(0,0,0,.16); border: 1px solid var(--brd); border-radius: var(--r); }
+.def-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 24px; }
+.def-row { display: flex; gap: 14px; align-items: flex-start; }
+.def-chk { width: 22px; height: 22px; border-radius: 50%; background: rgba(228,63,255,.1); border: 1px solid rgba(228,63,255,.28); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+.def-chk svg { width: 10px; height: 10px; }
+.def-row p { font-size: 0.9rem; color: var(--t2); line-height: 1.66; }
+.def-row strong { color: var(--t1); font-weight: 700; }
+.combo-note { margin-top: 28px; padding: 20px 26px; background: rgba(255,255,255,.03); border: 1px solid var(--brd); border-radius: var(--r); }
+.combo-note p { font-size: 0.9375rem; color: var(--t2); line-height: 1.74; }
+.combo-note strong { color: var(--t1); font-weight: 700; }
+
+/* ─── CONTACT / BRIEF ────────────────────────────────────────────────── */
+.brief-sec { background: var(--v); }
+.brief-steps { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; margin: 44px 0 36px; }
+.brief-step { background: rgba(255,255,255,.03); border: 1px solid var(--brd); border-radius: var(--r); padding: 28px 24px; }
+.brief-step-n { font-family: var(--fb); font-size: 0.6rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); display: block; margin-bottom: 12px; }
+.brief-step h3 { margin-bottom: 8px; font-size: 1rem; }
+.brief-step p { font-size: 0.875rem; color: var(--t3); line-height: 1.72; }
+.brief-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 8px; }
+.brief-action-box { padding: 32px 28px; border-radius: var(--r); }
+.brief-action-box.primary   { background: rgba(228,63,255,.07); border: 1.5px solid rgba(228,63,255,.28); }
+.brief-action-box.secondary { background: rgba(251,161,25,.05); border: 1.5px solid rgba(251,161,25,.22); }
+.brief-action-label { font-family: var(--fb); font-size: 0.6rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--mag); display: block; margin-bottom: 12px; }
+.brief-action-box.secondary .brief-action-label { color: var(--gold); }
+.brief-action-box h3 { margin-bottom: 10px; font-size: 1.0625rem; }
+.brief-action-box p { font-size: 0.875rem; color: var(--t3); line-height: 1.72; margin-bottom: 20px; }
+.avail-strip { margin-top: 8px; padding: 14px 20px; background: rgba(251,161,25,.06); border: 1px solid rgba(251,161,25,.16); border-radius: var(--r); display: flex; align-items: center; gap: 12px; }
+.avail-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--gold); flex-shrink: 0; box-shadow: 0 0 0 3px rgba(251,161,25,.2); }
+.avail-strip p { font-family: var(--fb); font-size: 0.8rem; font-weight: 600; color: var(--t2); line-height: 1.5; }
+.brief-note { margin-top: 24px; padding: 18px 22px; background: rgba(228,63,255,.04); border: 1px solid rgba(228,63,255,.12); border-radius: var(--r); }
+.brief-note p { font-size: 0.875rem; color: var(--t3); line-height: 1.72; }
+.brief-note strong { color: var(--t2); font-weight: 600; }
+
+/* ─── PORTFOLIO ──────────────────────────────────────────────────────── */
+.portfolio { background: var(--vdd); }
+.port-grid { display: grid; grid-template-columns: 1fr 1fr; grid-auto-rows: 220px; gap: 14px; margin-top: 52px; }
+.port-card { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; background: rgba(255,255,255,.03); border: 1px solid var(--brd); border-radius: var(--r); text-decoration: none; cursor: pointer; transition: border-color 0.25s, background 0.25s, transform 0.25s, box-shadow 0.25s; position: relative; overflow: hidden; padding: 16px; width: 100%; font: inherit; -webkit-appearance: none; appearance: none; }
+.port-card::after { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(228,63,255,.05) 0%, transparent 60%); opacity: 0; transition: opacity 0.3s; }
+.port-card:hover { border-color: rgba(228,63,255,.44); background: rgba(228,63,255,.05); transform: translateY(-3px); box-shadow: 0 12px 40px rgba(228,63,255,.1); }
+.port-card:hover::after { opacity: 1; }
+.port-icon { position: relative; z-index: 1; opacity: 0.2; transition: opacity 0.25s; }
+.port-card:hover .port-icon { opacity: 0.5; }
+.port-label { font-family: var(--fb); font-size: 0.6rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,.35); text-align: center; position: relative; z-index: 1; transition: color 0.25s; }
+.port-card:hover .port-label { color: rgba(255,255,255,.62); }
+
+/* ─── FIT ────────────────────────────────────────────────────────────── */
+.fit { background: var(--v); }
+.fit-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 52px; }
+.fit-yes { background: rgba(228,63,255,.06); border: 1px solid rgba(228,63,255,.2); border-radius: var(--r); padding: 36px; }
+.fit-no  { background: var(--card); border: 1px solid var(--brd); border-radius: var(--r); padding: 36px; }
+.fit-label { font-family: var(--fb); font-size: 0.68rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 22px; display: block; }
+.fit-yes .fit-label { color: var(--mag); }
+.fit-no  .fit-label { color: var(--t3); }
+.fit-list { list-style: none; display: flex; flex-direction: column; gap: 14px; }
+.fit-list li { display: flex; gap: 12px; align-items: flex-start; font-family: var(--fb); font-size: 0.9375rem; color: var(--t2); line-height: 1.62; }
+.fit-dot { width: 5px; height: 5px; border-radius: 50%; flex-shrink: 0; margin-top: 9px; }
+.fit-yes .fit-dot { background: var(--mag); }
+.fit-no  .fit-dot { background: rgba(255,255,255,.22); }
+
+/* ─── CTA SECTION ────────────────────────────────────────────────────── */
+.cta-sec { background: var(--grd); background-size: 200% 200%; animation: gradshift 14s ease-in-out infinite alternate; position: relative; overflow: hidden; }
+@keyframes gradshift { 0% { background-position: 0% 50%; } 100% { background-position: 100% 50%; } }
+.cta-glow { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 700px; height: 700px; background: radial-gradient(circle, rgba(255,255,255,.07) 0%, transparent 65%); pointer-events: none; }
+.cta-sec .col { position: relative; z-index: 1; }
+.cta-sec h2 { color: var(--w); margin-bottom: 18px; }
+.cta-sub { font-family: var(--fb); font-size: 1.0625rem; color: rgba(255,255,255,.76); max-width: 520px; margin: 0 0 40px; line-height: 1.76; }
+.two-choices { padding: 38px; background: rgba(0,0,0,.15); border: 1px solid rgba(255,255,255,.1); border-radius: var(--r); }
+.two-choices h3 { margin-bottom: 18px; font-size: 1.25rem; }
+.two-choices p { font-size: 0.9375rem; color: rgba(255,255,255,.82); line-height: 1.82; margin-bottom: 16px; }
+.two-choices p:last-of-type { margin-bottom: 0; }
+
+/* ─── FAQ ────────────────────────────────────────────────────────────── */
+.faq { background: var(--vdd); }
+.faq-list { margin-top: 52px; }
+.faq-item { border-bottom: 1px solid var(--brd); }
+.faq-q { width: 100%; background: none; border: none; padding: 22px 0; display: flex; justify-content: space-between; align-items: center; gap: 16px; font-family: var(--fb); font-size: 0.9375rem; font-weight: 700; color: var(--t1); text-align: left; cursor: pointer; transition: color 0.2s; }
+.faq-q:hover { color: var(--mag); }
+.faq-ico { width: 24px; height: 24px; border-radius: 50%; border: 1.5px solid rgba(255,255,255,.18); display: flex; align-items: center; justify-content: center; font-size: 1rem; color: var(--t3); flex-shrink: 0; transition: border-color 0.2s, color 0.2s, transform 0.3s; }
+.faq-item.open .faq-ico { border-color: var(--mag); color: var(--mag); transform: rotate(45deg); }
+.faq-a { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+.faq-a p { padding-bottom: 22px; font-size: 0.9375rem; color: var(--t3); line-height: 1.82; }
+
+/* ─── FOOTER ─────────────────────────────────────────────────────────── */
+footer { background: linear-gradient(135deg, rgba(228,63,255,.18) 0%, rgba(56,1,173,.38) 50%, rgba(228,63,255,.14) 100%); border-top: 1px solid rgba(228,63,255,.30); padding: 52px 0 36px; }
+.foot-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 48px; margin-bottom: 48px; }
+.foot-brand .foot-logo { font-family: var(--fb); font-size: 1.125rem; font-weight: 800; color: var(--w); display: block; margin-bottom: 12px; }
+.foot-brand p { font-size: 0.875rem; color: var(--t3); line-height: 1.72; max-width: 240px; }
+.foot-col h4 { color: var(--gold); margin-bottom: 18px; }
+.foot-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.foot-col a { font-family: var(--fb); font-size: 0.875rem; color: var(--t3); transition: color 0.2s; }
+.foot-col a:hover { color: var(--w); }
+.foot-bottom { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding-top: 28px; border-top: 1px solid var(--brd); }
+.foot-bottom p { font-family: var(--fb); font-size: 0.75rem; color: var(--t3); }
+
+/* ─── SCROLL REVEAL ──────────────────────────────────────────────────── */
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.65s ease, transform 0.65s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+.reveal-d1 { transition-delay: 0.1s; }
+.reveal-d2 { transition-delay: 0.2s; }
+.reveal-d3 { transition-delay: 0.3s; }
+.reveal-d4 { transition-delay: 0.4s; }
+.reveal-d5 { transition-delay: 0.5s; }
+
+.port-card-images { padding: 8px; justify-content: flex-start; gap: 6px; }
+.port-imgs-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; width: 100%; }
+.port-imgs-grid img { width: 100%; height: 82px; object-fit: cover; border-radius: 3px; opacity: 0.72; transition: opacity 0.25s; }
+.port-card-images:hover .port-imgs-grid img { opacity: 1; }
+
+.price-ack { display:flex; gap:14px; align-items:flex-start; cursor:pointer; margin-bottom:20px; padding:18px 20px; background:rgba(228,63,255,.05); border:1px solid rgba(228,63,255,.18); border-radius:var(--r); }
+.price-ack input[type="checkbox"] { width:20px; height:20px; flex-shrink:0; margin-top:2px; accent-color:var(--mag); cursor:pointer; }
+.price-ack span { font-family:var(--fb); font-size:0.9rem; color:var(--t2); line-height:1.65; font-weight:500; }
+.brief-btn-wrap { margin-top:4px; }
+.brief-btn-wrap .btn { transition:opacity 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease; }
+
+:focus-visible { outline: 2px solid var(--mag); outline-offset: 3px; border-radius: 3px; }
+
+/* ─── REDUCED MOTION ─────────────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition-duration: 0.01ms !important; }
+  .hero { background: var(--grd); }
+  .cta-sec { animation: none; }
+}
+
+/* ─── RESPONSIVE ─────────────────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .bento { grid-template-columns: 1fr 1fr; }
+  .brain-grid { grid-template-columns: 1fr 1fr; }
+  .foot-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 900px) {
+  section { padding: 72px 0; }
+  .nav-links { display: none; }
+  .nav-burger { display: flex; }
+  .problem-grid { grid-template-columns: 1fr; gap: 36px; }
+  .fail-grid { grid-template-columns: 1fr 1fr; }
+  .svc-grid { grid-template-columns: 1fr; }
+  .offer-grid { grid-template-columns: 1fr; }
+  .chem-grid { grid-template-columns: 1fr; }
+  .fit-grid { grid-template-columns: 1fr; }
+  .def-grid { grid-template-columns: 1fr; }
+  .brief-steps { grid-template-columns: 1fr; }
+  .brief-actions { grid-template-columns: 1fr; }
+  .port-grid { grid-template-columns: 1fr 1fr; grid-template-rows: auto; }
+  .port-card { min-height: 180px; }
+  .foot-grid { grid-template-columns: 1fr; gap: 32px; }
+}
+@media (max-width: 600px) {
+  section { padding: 56px 0; }
+  .col, .wide { padding: 0 20px; }
+  .bento { grid-template-columns: 1fr 1fr; }
+  .fail-grid { grid-template-columns: 1fr; }
+  .brain-grid { grid-template-columns: 1fr; }
+  .port-grid { grid-template-columns: 1fr; }
+  .brief-steps, .brief-actions { grid-template-columns: 1fr; }
+  .hero-btns { flex-direction: column; }
+  .btn-pill { width: 100%; justify-content: center; }
+  h1 { font-size: 2.375rem; }
+  .seq-steps { flex-direction: column; }
+  .sarrow { transform: rotate(90deg); }
+  .two-choices { padding: 24px 20px; }
+}
+/* ── AD CREATIVES LIGHTBOX ──────────────────────────────────────────── */
+.ad-lightbox { display: none; position: fixed; inset: 0; z-index: 999; background: rgba(10,0,26,.92); backdrop-filter: blur(6px); align-items: center; justify-content: center; padding: 40px; }
+.ad-lightbox.open { display: flex; }
+.ad-lightbox-stage { position: relative; max-width: 900px; max-height: 82vh; display: flex; flex-direction: column; align-items: center; gap: 14px; }
+.ad-lightbox-stage img { max-width: 100%; max-height: 76vh; border-radius: 6px; box-shadow: 0 20px 60px rgba(0,0,0,.5); border: 1px solid var(--brd); }
+.ad-lightbox-count { font-family: var(--fb); font-size: 0.65rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--t3); }
+.ad-lightbox-close { position: absolute; top: 18px; right: 24px; background: none; border: none; color: var(--w); font-size: 2.2rem; line-height: 1; cursor: pointer; opacity: 0.7; transition: opacity 0.2s; padding: 4px 10px; }
+.ad-lightbox-close:hover { opacity: 1; color: var(--gold); }
+.ad-lightbox-nav { background: rgba(255,255,255,.06); border: 1px solid var(--brd); color: var(--w); font-size: 1.1rem; width: 44px; height: 44px; border-radius: 50%; cursor: pointer; flex-shrink: 0; transition: background 0.2s, border-color 0.2s; }
+.ad-lightbox-nav:hover { background: rgba(228,63,255,.15); border-color: rgba(228,63,255,.44); color: var(--gold); }
+@media (max-width: 640px) {
+  .ad-lightbox { padding: 16px; }
+  .ad-lightbox-nav { width: 38px; height: 38px; font-size: 0.95rem; }
+  .ad-lightbox-close { top: 8px; right: 10px; }
+}
+</style>
+</head>
+<body>
+
+<div class="overlay" id="overlay" onclick="closeDrawer()"></div>
+<nav class="nav-drawer" id="drawer" aria-label="Mobile navigation">
+  <button class="drawer-close" onclick="closeDrawer()" aria-label="Close menu">&#x2715;</button>
+  <a href="#work"     onclick="closeDrawer()">Work</a>
+  <a href="#offers"   onclick="closeDrawer()">Offers</a>
+  <a href="#services" onclick="closeDrawer()">Services</a>
+  <a href="#faq"      onclick="closeDrawer()">FAQ</a>
+  <a href="#contact"  onclick="closeDrawer()" class="btn btn-mag" style="justify-content:center">Book a Call</a>
+</nav>
+
+<header id="nav" role="banner">
+  <div class="wide nav-inner">
+    <div class="nav-brand">
+      <span class="nav-logo">Saima Khalid</span>
+      <span class="nav-tagline">Direct Response Copywriter &amp; Funnel Builder for DTC and Ecommerce Brands</span>
+    </div>
+    <ul class="nav-links" role="list">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#offers">Offers</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact" class="nav-cta-btn">Book a Call</a></li>
+    </ul>
+    <button class="nav-burger" id="burger" onclick="openDrawer()" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     HERO — Gradient background (matches Two Futures. One Decision. section)
+════════════════════════════════════════════════════════════════ -->
+<section class="hero" aria-label="Hero">
+
+  <!-- brand-tinted overlay layers for text contrast -->
+  <div class="hero-overlay" aria-hidden="true"></div>
+
+  <!-- magenta accent glow behind the headline -->
+  <div class="hero-accent" aria-hidden="true"></div>
+
+  <!-- content -->
+  <div class="col">
+    <span class="eyebrow reveal">The Structural Mistake Behind Underperforming Ads</span>
+    <h1 class="reveal reveal-d1">
+      What If the Algorithm Found the Right Person and <span class="m">Your Copy</span> Was the One That <span class="g">Lost Them?</span>
+    </h1>
+    <p class="hero-sub reveal reveal-d2">
+      The creative looks clean. The metrics look wrong. The diagnosis underneath the copy never happened. Every piece written here starts with a confirmed buyer psychology diagnosis before a single word is drafted.
+    </p>
+    <div class="hero-btns reveal reveal-d3">
+      <a href="#contact" class="btn-pill btn-pill-mag">Book a Call</a>
+      <a href="#work"    class="btn-pill btn-pill-ghost">See the Work</a>
+    </div>
+    <div class="hero-proof reveal reveal-d4">
+      <span class="proof-item"><span class="proof-dot"></span>7 Copy Formats</span>
+      <span class="proof-item"><span class="proof-dot"></span>5-Phase Diagnostic</span>
+      <span class="proof-item"><span class="proof-dot"></span>Coded HTML Deliverables</span>
+      <span class="proof-item"><span class="proof-dot"></span>One Person. Full Funnel.</span>
+    </div>
+  </div>
+  <div class="scroll-cue" aria-hidden="true">
+    <span>Scroll</span>
+    <div class="scroll-cue-line"></div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats" aria-label="At a glance">
+  <div class="wide">
+    <div class="bento">
+      <div class="bento-cell featured reveal">
+        <p>Psychology-first copy built on a confirmed buyer diagnosis. Strategy, copy, and coded HTML from one person, start to finish. No handoffs. No queue.</p>
+      </div>
+      <div class="bento-cell reveal reveal-d1">
+        <span class="stat-num" data-count="7">7</span>
+        <span class="stat-lbl">Copy Formats<br>Delivered</span>
+      </div>
+      <div class="bento-cell reveal reveal-d2">
+        <span class="stat-num" data-count="12">12</span>
+        <span class="stat-lbl">Psychological<br>Elements Per Piece</span>
+      </div>
+      <div class="bento-cell reveal reveal-d3">
+        <span class="stat-num" data-count="5">5</span>
+        <span class="stat-lbl">Quality Checks<br>Before Delivery</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="problem" aria-label="The real problem">
+  <div class="wide">
+    <div class="problem-grid">
+      <div class="problem-left reveal">
+        <span class="eyebrow">The Real Problem</span>
+        <h2>Cold traffic <span class="m">isn't a smaller</span> warm audience. It's a <span class="g">different person, at a different moment in their psychology.</span></h2>
+        <p>The algorithm has already done its job. It found the right person, placed the ad in front of them, and handed them to the page. What happens next is determined entirely by whether the copy was built for who that person actually is at that exact moment.</p>
+        <p>Most copy is written warm. The brief comes from brand materials, existing customers, and warm audience data. The result is copy that speaks to someone who already trusts the brand. That copy, launched cold, fails quietly. The targeting gets blamed. The creative gets pulled. The real cause is never named.</p>
+      </div>
+      <div class="problem-cards reveal reveal-d2">
+        <article class="pcard">
+          <h3>Wrong Awareness Level</h3>
+          <p>Cold traffic and warm traffic are not interchangeable audiences. Copy that enters at the wrong awareness level reads as either too aggressive or too advanced. In both cases the cold buyer disengages before the mechanism is ever explained.</p>
+        </article>
+        <article class="pcard">
+          <h3>No Buyer Psychology Diagnosis</h3>
+          <p>Before a single word is written, the buyer's position on the awareness scale needs to be confirmed. Their dominant emotion needs to be identified. The hook needs to be tested against audience match. Without that diagnostic, the writing has no foundation.</p>
+        </article>
+        <article class="pcard">
+          <h3>The Three-Party Handoff</h3>
+          <p>Strategy to copy to design to development. Four people. Six weeks. By the time the page goes live, the strategic intent has been diluted through every handoff. The copy the buyer sees is a downstream version of what was written.</p>
+        </article>
+        <article class="pcard">
+          <h3>Generic Positioning</h3>
+          <p>If the copy could run under a competitor's brand name without anyone noticing, it has not done its job. Differentiation is a positioning decision made at the copy level, before the design layer ever touches it.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAILED SOLUTIONS -->
+<section class="failed" aria-label="Why nothing worked">
+  <div class="col">
+    <div class="sh reveal">
+      <span class="eyebrow">Why Nothing Worked</span>
+      <h2>You have already been through the cycle. Here is <span class="m">what was missing</span> <span class="g">every time.</span></h2>
+      <p>The copy might have been well-written. The agency might have had strong credentials. None of it changed the fundamental problem: nobody ran the diagnosis before the writing started.</p>
+    </div>
+    <div class="fail-grid">
+      <article class="fcard reveal reveal-d1">
+        <span class="fnum">01</span>
+        <h3>The Portfolio Copywriter</h3>
+        <p>Most skilled copywriters build their process around writing well and testing afterward. What they rarely build is a diagnostic framework that runs before the first sentence is typed. The copy goes live at the wrong awareness level, and the page underperforms without a clear reason why.</p>
+        <div class="froot">Root Cause: Writing-first. No cold-traffic buyer psychology diagnosis.</div>
+      </article>
+      <article class="fcard reveal reveal-d2">
+        <span class="fnum">02</span>
+        <h3>The Content Agency</h3>
+        <p>Agencies assign your project to whoever is available. The output is an approximation of your brand assembled from a brief. It rarely connects with your specific cold buyer because nobody in the process mapped that buyer's psychology. The handoff between strategy, copy, and design dilutes intent at every step.</p>
+        <div class="froot">Root Cause: Brief-driven output. No psychological mapping of the cold traffic.</div>
+      </article>
+      <article class="fcard reveal reveal-d3">
+        <span class="fnum">03</span>
+        <h3>In-House Writing</h3>
+        <p>Internal writers know the product deeply. They also know the brand, the warm audience, and the existing customer. That knowledge works against them on cold traffic. They write from the inside out, from features toward benefits. Cold buyers arrive at zero. Inside-out copy loses them before they reach the mechanism.</p>
+        <div class="froot">Root Cause: Inside-out, product-first. No cold-traffic diagnosis.</div>
+      </article>
+    </div>
+    <div class="fail-quote reveal">
+      <blockquote>"Most copy does not fail because it was badly written. It fails because the buyer's psychology was never mapped before the writing started."</blockquote>
+      <cite>The principle behind every project taken here</cite>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process" aria-label="The 5-phase process">
+  <div class="col">
+    <div class="sh reveal">
+      <span class="eyebrow">The Process</span>
+      <h2>Five phases. <span class="m">Applied to every project,</span> every format, <span class="g">every time.</span></h2>
+      <p>The diagnosis runs before the writing. No format, no matter how short, skips the diagnostic phase. The writing is the last thing that happens, not the first.</p>
+    </div>
+    <div class="timeline">
+      <article class="tl-item reveal">
+        <div class="tl-marker"><div class="tl-num">01</div></div>
+        <div class="tl-body">
+          <h3>Material Analysis</h3>
+          <p>Brand language, tone patterns, and structural habits are extracted from all existing materials. The copy sounds like the brand because it is built from the brand's own voice, not assembled from a category template.</p>
+          <span class="tl-badge">Voice Authentication Document</span>
+        </div>
+      </article>
+      <article class="tl-item reveal reveal-d1">
+        <div class="tl-marker"><div class="tl-num">02</div></div>
+        <div class="tl-body">
+          <h3>Audience Segmentation</h3>
+          <p>Cold traffic is placed on the five-stage awareness scale. A pain hierarchy is built from surface frustrations through to the underlying fears the buyer rarely voices. The exact map of which message belongs at which awareness level is confirmed before the hook is selected.</p>
+          <span class="tl-badge">Audience Profile Document</span>
+        </div>
+      </article>
+      <article class="tl-item reveal reveal-d2">
+        <div class="tl-marker"><div class="tl-num">03</div></div>
+        <div class="tl-body">
+          <h3>Hook Selection</h3>
+          <p>Every viable hook is rated by audience match percentage and the number of psychological elements it activates simultaneously. The winning hook connects with seventy percent or more of the core audience and activates four or more elements at once.</p>
+          <span class="tl-badge">Hook Selection Document</span>
+        </div>
+      </article>
+      <article class="tl-item reveal reveal-d3">
+        <div class="tl-marker"><div class="tl-num">04</div></div>
+        <div class="tl-body">
+          <h3>Psychological Layering</h3>
+          <p>Twelve persuasion elements are mapped across the copy in deliberate sequence. Pain Point, Urgency, Future Pacing, Curiosity, Emotional Charge, Outcome Promise, Agitation, Authority, Scarcity, and FOMO are placed to compound desire at the right moment, in the right order, for the right buyer.</p>
+          <span class="tl-badge">Psychological Layer Map</span>
+        </div>
+      </article>
+      <article class="tl-item reveal reveal-d4">
+        <div class="tl-marker"><div class="tl-num">05</div></div>
+        <div class="tl-body">
+          <h3>Quality Audit</h3>
+          <p>Five criteria before delivery: Voice Authenticity, Strategic Alignment, Audience Sophistication Fit, Psychological Effectiveness, and Technical Accuracy. Every claim is tested. Every page is read aloud in full. Zero errors leave the desk.</p>
+          <span class="tl-badge">Zero-Error Final Deliverable</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- NEURO -->
+<section class="neuro" aria-label="The science">
+  <div class="col">
+    <div class="sh reveal">
+      <span class="eyebrow">The Science Behind the Copy</span>
+      <h2>Great copy does not persuade people. <span class="m">It speaks to the brain</span> <span class="g">they actually have.</span></h2>
+      <p>Up to ninety-five percent of purchasing decisions are driven by factors the buyer is not consciously aware of. Copy that speaks to the wrong layer of the brain at the wrong moment loses the sale before the logic section is reached.</p>
+    </div>
+    <div class="brain-grid">
+      <article class="bc reveal">
+        <span class="bc-tag">Layer 01 — Reptilian Brain</span>
+        <h3>The 2.5-Second Filter</h3>
+        <p>The fastest part of the brain scans for threats and opportunities before conscious thought begins. The hook, the headline, and the opening line must signal immediately that this is relevant and this is for me. If the cold buyer does not pass this filter in the first two and a half seconds, the page is closed.</p>
+      </article>
+      <article class="bc reveal reveal-d1">
+        <span class="bc-tag">Layer 02 — Limbic Brain</span>
+        <h3>Where Decisions Are Made</h3>
+        <p>The limbic system processes emotion five hundred thousand times faster than conscious thought. The emotional case for buying is built here before a single rational argument is made. Every piece connects at the emotional level first because that is where the actual buying decision lives.</p>
+      </article>
+      <article class="bc reveal reveal-d2">
+        <span class="bc-tag">Layer 03 — Neocortex</span>
+        <h3>Permission to Buy</h3>
+        <p>After the emotional decision is made, the rational brain activates. Its job is not to reconsider the decision. Its job is to justify it. Facts, proof, and mechanisms earn their place here, giving the buyer the rational language to confirm a decision already made emotionally.</p>
+      </article>
+    </div>
+    <div class="seq-box reveal">
+      <h4>The Conversion Sequence Applied to Every Piece</h4>
+      <p style="margin-top:12px;font-size:.9375rem;color:var(--t2)">The three brains must be addressed in a fixed order. Reverse the sequence and the copy fails. Every piece follows this sequence without exception.</p>
+      <div class="seq-steps">
+        <div class="sstep"><span class="sstep-n">01</span><span class="sstep-l">Hook<br>Reptilian</span></div>
+        <span class="sarrow">&#x2192;</span>
+        <div class="sstep"><span class="sstep-n">02</span><span class="sstep-l">Build<br>Limbic Desire</span></div>
+        <span class="sarrow">&#x2192;</span>
+        <div class="sstep"><span class="sstep-n">03</span><span class="sstep-l">Justify With<br>Neocortex</span></div>
+        <span class="sarrow">&#x2192;</span>
+        <div class="sstep"><span class="sstep-n">04</span><span class="sstep-l">Trigger<br>the Action</span></div>
+      </div>
+    </div>
+    <h3 style="font-size:1.375rem;margin-bottom:24px;font-weight:700" class="reveal">Four neurochemical triggers activated in every piece.</h3>
+    <div class="chem-grid">
+      <article class="cc reveal">
+        <div class="cc-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--mag)"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        </div>
+        <div>
+          <span class="cc-tag">Dopamine</span>
+          <h3>The Curiosity Driver</h3>
+          <p>Open loops, partial reveals, and counterintuitive statements trigger dopamine. Every headline activates it without satisfying it too early so the reader is always leaning forward.</p>
+        </div>
+      </article>
+      <article class="cc reveal reveal-d1">
+        <div class="cc-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--mag)"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </div>
+        <div>
+          <span class="cc-tag">Oxytocin</span>
+          <h3>The Trust Builder</h3>
+          <p>Language that makes the reader feel understood triggers oxytocin. Trust is built through recognition before it is built through credentials.</p>
+        </div>
+      </article>
+      <article class="cc reveal reveal-d2">
+        <div class="cc-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--mag)"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        </div>
+        <div>
+          <span class="cc-tag">Cortisol</span>
+          <h3>The Urgency Signal</h3>
+          <p>Loss-aversion framing and cost-of-not-acting contrast activate cortisol. The reader does not just want the outcome. They want to stop losing what they are currently losing.</p>
+        </div>
+      </article>
+      <article class="cc reveal reveal-d3">
+        <div class="cc-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--mag)"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+        </div>
+        <div>
+          <span class="cc-tag">Testosterone</span>
+          <h3>The Status Activator</h3>
+          <p>Copy that positions the buyer as someone who acts decisively and belongs in a different category than those who accept the status quo activates this consistently.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services" aria-label="Services">
+  <div class="col">
+    <div class="sh reveal">
+      <span class="eyebrow">What I Write</span>
+      <h2>Seven formats. <span class="m">One process.</span> <span class="g">Zero handoffs.</span></h2>
+      <p>Every format begins with the same five-phase diagnostic. Every page-based deliverable arrives coded and launch-ready. The only variable is scope.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="sc reveal">
+        <span class="sc-tag">Format 01</span>
+        <h3>Ad Copywriting</h3>
+        <p>Cold-audience hooks, headlines, and creative angles for Meta, TikTok, Instagram, and LinkedIn. Multiple angle sets per campaign, each entering from a different emotional trigger mapped to the confirmed awareness level of the cold traffic entering that campaign.</p>
+        <div class="sc-del">Multiple angle sets, platform-formatted and upload-ready</div>
+      </article>
+      <article class="sc reveal reveal-d1">
+        <span class="sc-tag">Format 02</span>
+        <h3>Ad Creatives</h3>
+        <p>Static ad creatives for Meta, TikTok, and Instagram built after a detailed research process covering the brand and the product. Each creative is built on a different confirmed angle and is production-ready to upload and test.</p>
+        <div class="sc-del">Research-backed creative suite, production-ready</div>
+      </article>
+      <article class="sc reveal reveal-d2">
+        <span class="sc-tag">Format 03</span>
+        <h3>Email Sequences</h3>
+        <p>Welcome, cart abandonment, post-purchase, and win-back flows. Each email is structured around one psychological trigger mapped to the reader's exact position in the sequence and their confirmed sophistication stage.</p>
+        <div class="sc-del">Full sequence, import-ready for your ESP</div>
+      </article>
+      <article class="sc reveal reveal-d3">
+        <span class="sc-tag">Format 04</span>
+        <h3>Sales Pages</h3>
+        <p>Full direct response with awareness segmentation, structured objection mapping, and confidence-based closes. Delivered as a fully coded, deploy-ready HTML file. No designer needed. No developer needed.</p>
+        <div class="sc-del">Research, full copy, and coded deploy-ready HTML</div>
+      </article>
+      <article class="sc reveal reveal-d4">
+        <span class="sc-tag">Format 05</span>
+        <h3>Advertorials</h3>
+        <p>Editorial-format pre-sell pages that bridge cold paid social traffic to the offer by building belief before the reader reaches the sales page. Delivered as a coded, self-contained HTML file ready to publish.</p>
+        <div class="sc-del">Research, full copy, and coded deploy-ready HTML</div>
+      </article>
+      <article class="sc reveal reveal-d5">
+        <span class="sc-tag">Format 06</span>
+        <h3>VSL Scripts</h3>
+        <p>Cold-traffic video sales letters built around story-based selling and a tested narrative arc. Multiple hook variants included so creative iteration is built into the deliverable from day one.</p>
+        <div class="sc-del">Research, full script with hook variants and pacing notes</div>
+      </article>
+      <article class="sc reveal">
+        <span class="sc-tag">Format 07</span>
+        <h3>Research and Strategy</h3>
+        <p>The full psychological intelligence document as a standalone deliverable. Buyer persona, awareness diagnosis, emotional trigger map, hook selection, and ranked messaging hierarchy, ready for any writer or campaign.</p>
+        <div class="sc-del">Complete 25-point Copy Intelligence Dossier</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- OFFERS -->
+<section class="offers" id="offers" aria-label="Offers">
+  <div class="col">
+    <div class="sh reveal">
+      <span class="eyebrow">How the Work Gets Done</span>
+      <h2>Every format is a complete service. <span class="m">Priced separately.</span> <span class="g">Justified individually.</span></h2>
+    </div>
+    <div class="offer-intro reveal">
+      <p>There are no packages here. You come with what you need. The work is scoped, priced, and delivered for exactly that. If you need more than one format, each one is engaged separately with its own price, its own diagnostic, and its own deliverable. Research conducted for one format informs others in the same project without requiring it to be repeated from scratch.</p>
+    </div>
+    <div class="offer-grid">
+      <article class="ofc reveal">
+        <span class="ofc-tag">Format 01</span>
+        <h3>Ad Copywriting</h3>
+        <p>Multiple angle sets built from the confirmed awareness level of the cold traffic. Platform-formatted and upload-ready.</p>
+        <span class="price-badge">$350 — $500</span>
+        <span class="turn-badge">3 — 4 Business Days</span>
+      </article>
+      <article class="ofc reveal reveal-d1">
+        <span class="ofc-tag">Format 02</span>
+        <h3>Ad Creatives</h3>
+        <p>Static ad creatives built after detailed product research. Each creative on a different confirmed angle. Production-ready.</p>
+        <span class="price-badge">$350 — $600</span>
+        <span class="turn-badge">3 — 4 Business Days</span>
+      </article>
+      <article class="ofc reveal reveal-d2">
+        <span class="ofc-tag">Format 03</span>
+        <h3>Email Sequences</h3>
+        <p>Welcome, cart abandonment, post-purchase, and win-back flows. One psychological trigger per email. Import-ready for your ESP.</p>
+        <span class="price-badge">$450 — $700</span>
+        <span class="turn-badge">3 — 4 Business Days</span>
+      </article>
+      <article class="ofc reveal reveal-d3">
+        <span class="ofc-tag">Format 04</span>
+        <h3>Sales Page</h3>
+        <p>Full direct response copy with awareness segmentation and objection mapping. Delivered as a fully coded, deploy-ready HTML file.</p>
+        <span class="price-badge">$1,200 — $1,800</span>
+        <span class="turn-badge">5 — 7 Business Days</span>
+      </article>
+      <article class="ofc reveal reveal-d4">
+        <span class="ofc-tag">Format 05</span>
+        <h3>Advertorial</h3>
+        <p>Editorial-format pre-sell page bridging cold paid social to the offer. Full copy plus a coded, self-contained HTML file.</p>
+        <span class="price-badge">$900 — $1,400</span>
+        <span class="turn-badge">5 — 7 Business Days</span>
+      </article>
+      <article class="ofc reveal reveal-d5">
+        <span class="ofc-tag">Format 06</span>
+        <h3>VSL Script</h3>
+        <p>Full production script with multiple hook variants and pacing notes. Built around story-based selling. Production-ready from delivery.</p>
+        <span class="price-badge">$700 — $1,100</span>
+        <span class="turn-badge">5 — 7 Business Days</span>
+      </article>
+    </div>
+    <div class="combo-note reveal">
+      <p><strong>Timelines and pricing are confirmed before work begins</strong> and adjusted based on project scope. Each format is priced and justified individually so you know exactly what you are paying for at every stage.</p>
+    </div>
+    <div class="offer-defaults reveal">
+      <h3 style="margin-bottom:6px;font-size:1.125rem">What Every Engagement Includes, By Default</h3>
+      <div class="def-grid" style="margin-top:28px">
+        <div class="def-row">
+          <div class="def-chk"><svg viewBox="0 0 10 10" fill="none"><path d="M1.5 5L4 7.5L8.5 2.5" stroke="#E43FFF" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <p><strong>Five-phase quality audit</strong> before every delivery. Five criteria. Read aloud in full. Zero errors.</p>
+        </div>
+        <div class="def-row">
+          <div class="def-chk"><svg viewBox="0 0 10 10" fill="none"><path d="M1.5 5L4 7.5L8.5 2.5" stroke="#E43FFF" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <p><strong>Coded HTML for every page deliverable.</strong> Opens in a browser. Ready to publish. No queue.</p>
+        </div>
+        <div class="def-row">
+          <div class="def-chk"><svg viewBox="0 0 10 10" fill="none"><path d="M1.5 5L4 7.5L8.5 2.5" stroke="#E43FFF" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <p><strong>One revision round</strong> included across every deliverable, scoped to the original brief.</p>
+        </div>
+        <div class="def-row">
+          <div class="def-chk"><svg viewBox="0 0 10 10" fill="none"><path d="M1.5 5L4 7.5L8.5 2.5" stroke="#E43FFF" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <p><strong>Confirmed timelines before work begins.</strong> Every milestone agreed in writing before any phase starts.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT / BOOK A CALL -->
+<section class="brief-sec" id="contact" aria-label="Start a project">
+  <div class="col">
+    <div class="sh reveal">
+      <span class="eyebrow">How to Get Started</span>
+      <h2>Three steps. <span class="m">No guessing.</span> <span class="g">No back and forth.</span></h2>
+      <p>The brief qualifies the project. The call confirms scope and fit. Both happen before anything moves forward.</p>
+    </div>
+    <div class="brief-steps">
+      <div class="brief-step reveal">
+        <span class="brief-step-n">Step 01</span>
+        <h3>Review the Pricing</h3>
+        <p>Price ranges for each format are listed in the Offers section above. Read them before filling the brief. The call is only available to clients who have reviewed and are comfortable with the investment range.</p>
+      </div>
+      <div class="brief-step reveal reveal-d1">
+        <span class="brief-step-n">Step 02</span>
+        <h3>Fill the Strategy Brief</h3>
+        <p>A structured questionnaire covering the product, the buyer, the traffic source, and existing assets. Takes ten to fifteen minutes to complete.</p>
+      </div>
+      <div class="brief-step reveal reveal-d2">
+        <span class="brief-step-n">Step 03</span>
+        <h3>Book Your Discovery Call</h3>
+        <p>After submitting the brief, use the Calendly link to book a discovery call. Calls are available Monday through Friday and are confirmed only for clients who have submitted a completed brief.</p>
+      </div>
+    </div>
+    <div class="brief-actions reveal">
+      <div class="brief-action-box primary">
+        <span class="brief-action-label">Step 02 — Start Here</span>
+        <h3>Fill the Strategy Brief</h3>
+        <p>The brief is the first step. It gives context needed to make the discovery call productive. Do not skip it. Calls without a submitted brief will not be confirmed.</p>
+        <label class="price-ack" for="priceAck">
+          <input type="checkbox" id="priceAck" onchange="toggleBrief(this)">
+          <span>I have reviewed the pricing listed on the website and I am comfortable with the investment range before submitting this brief</span>
+        </label>
+        <div class="brief-btn-wrap">
+          <a id="briefBtn" href="https://saimakhalid1985.github.io/saima-khalid-portfolio/brief.html" class="btn btn-mag" style="opacity:.4;pointer-events:none" target="_blank" rel="noopener">Fill the Strategy Brief</a>
+        </div>
+      </div>
+      <div class="brief-action-box secondary">
+        <span class="brief-action-label">Step 03 — After the Brief</span>
+        <h3>Book a Discovery Call</h3>
+        <p>Once your brief is submitted, use the link below to book your call. Choose a slot that works for your timezone. All calls are on workdays only.</p>
+        <a href="https://calendly.com/saimakhalid2873/30min" class="btn btn-gold" target="_blank" rel="noopener">Book a Call — Calendly</a>
+        <div class="avail-strip" style="margin-top:16px">
+          <div class="avail-dot"></div>
+          <p>Available Monday to Friday &bull; 9:00 AM to 2:00 PM Pakistan Standard Time (PKT / UTC+5)</p>
+        </div>
+      </div>
+    </div>
+    <div class="brief-note reveal">
+      <p><strong>Complete the Strategy Brief before booking a call.</strong> Calls booked without a submitted brief will not be confirmed. Prefer a written scope proposal? Email directly at <a href="mailto:saimakhalid2873@gmail.com" style="color:var(--gold);border-bottom:1px solid rgba(251,161,25,.3)">saimakhalid2873@gmail.com</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section class="portfolio" id="work" aria-label="Sample work">
+  <div class="wide">
+    <div class="sh reveal">
+      <span class="eyebrow">Sample Work</span>
+      <h2>Psychology-backed <span class="m">copy</span> across <span class="g">six formats.</span></h2>
+      <p>Every piece was written to a confirmed awareness level and sophistication stage. Every page-based deliverable arrived as a fully coded, deploy-ready HTML file.</p>
+    </div>
+    <div class="port-grid reveal">
+      <a href="https://drive.google.com/drive/folders/1lYyMbQzCaRMAh7_r7S736LaoVqPNAcnK?usp=sharing" class="port-card" aria-label="Portfolio &amp; Resume" target="_blank" rel="noopener">
+        <svg class="port-icon" width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 4L24 14L14 24M4 14H24" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="port-label">Portfolio &amp; Resume</span>
+      </a>
+      <a href="https://keurig-elite.netlify.app/" class="port-card" aria-label="Sales Page" target="_blank" rel="noopener">
+        <svg class="port-icon" width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 4L24 14L14 24M4 14H24" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="port-label">Sales Page</span>
+      </a>
+      <a href="https://vslfunnel.netlify.app/" class="port-card" aria-label="VSL Script" target="_blank" rel="noopener">
+        <svg class="port-icon" width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 4L24 14L14 24M4 14H24" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="port-label">VSL Script</span>
+      </a>
+      <a href="https://thelaptopliving-6figure.netlify.app/" class="port-card" aria-label="Advertorial Funnel" target="_blank" rel="noopener">
+        <svg class="port-icon" width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 4L24 14L14 24M4 14H24" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="port-label">Advertorial Funnel</span>
+      </a>
+      <button type="button" class="port-card port-card-images" aria-label="Open Ad Creatives" onclick="openAdLightbox(0)">
+        <div class="port-imgs-grid">
+          <img src="images/img_1.png" alt="Ad Creative 1">
+          <img src="images/img_2.png" alt="Ad Creative 2">
+          <img src="images/img_3.png" alt="Ad Creative 3">
+          <img src="images/img_4.png" alt="Ad Creative 4">
+        </div>
+        <span class="port-label">Ad Creatives</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- AD CREATIVES LIGHTBOX -->
+<div class="ad-lightbox" id="adLightbox" role="dialog" aria-modal="true" aria-label="Ad creatives viewer">
+  <button type="button" class="ad-lightbox-close" aria-label="Close" onclick="closeAdLightbox()">&times;</button>
+  <button type="button" class="ad-lightbox-nav ad-lightbox-prev" aria-label="Previous image" onclick="adLightboxStep(-1)">&#10094;</button>
+  <div class="ad-lightbox-stage">
+    <img id="adLightboxImg" src="" alt="Ad creative">
+    <div class="ad-lightbox-count" id="adLightboxCount"></div>
+  </div>
+  <button type="button" class="ad-lightbox-nav ad-lightbox-next" aria-label="Next image" onclick="adLightboxStep(1)">&#10095;</button>
+</div>
+
+<!-- FIT -->
+<section class="fit" aria-label="Who this is for">
+  <div class="col">
+    <div class="sh reveal">
+      <span class="eyebrow">Right Fit</span>
+      <h2>DTC and ecommerce brands <span class="m">investing in</span> <span class="g">cold-traffic paid social.</span></h2>
+    </div>
+    <div class="fit-grid">
+      <div class="fit-yes reveal">
+        <span class="fit-label">This Is for You If</span>
+        <ul class="fit-list">
+          <li><span class="fit-dot"></span>You run cold-traffic paid social for a DTC or ecommerce brand</li>
+          <li><span class="fit-dot"></span>Your copy looks professional but is not producing the conversion rate your spend deserves</li>
+          <li><span class="fit-dot"></span>You need a coded, launch-ready page, not a document to hand off to design and development</li>
+          <li><span class="fit-dot"></span>You want strategy built on confirmed buyer psychology, not creative instinct and a briefing call</li>
+          <li><span class="fit-dot"></span>You are an agency that needs white-label copy and page builds without coordination overhead</li>
+        </ul>
+      </div>
+      <div class="fit-no reveal reveal-d2">
+        <span class="fit-label">Not the Right Fit If</span>
+        <ul class="fit-list">
+          <li><span class="fit-dot"></span>You need copy fast and cheap with no diagnostic process behind it</li>
+          <li><span class="fit-dot"></span>You want a writer to drop sentences into a template that is already built</li>
+          <li><span class="fit-dot"></span>You are not currently running or planning cold-traffic paid social campaigns</li>
+          <li><span class="fit-dot"></span>You treat copywriting as a commodity purchase rather than a conversion system</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-sec" aria-label="Two choices">
+  <div class="cta-glow"></div>
+  <div class="col">
+    <span class="eyebrow reveal" style="color:rgba(255,255,255,.65);display:block">Two Futures. One Decision.</span>
+    <h2 class="reveal">The ad spend <span class="m">is the same</span> <span class="g">either way.</span></h2>
+    <p class="cta-sub reveal">The outcome depends entirely on what is behind the copy.</p>
+    <div class="two-choices reveal">
+      <h3>Six months from now, one of two things is true.</h3>
+      <p>The cold-traffic campaigns are still running copy built without a buyer psychology diagnosis. Each test cycle costs more than the last. Nobody can identify why the conversion rate stays flat despite clean creative and healthy ad spend. The algorithm keeps getting blamed. The real cause is never named.</p>
+      <p>Or the campaigns are running copy built from a confirmed diagnosis of exactly where the cold buyer sits in their psychology, structured around the neurological sequence they move through before deciding, and delivered as a page that went live the same day it was approved.</p>
+      <p>The ad spend is the same either way. The outcome depends entirely on what is behind the copy. The brief takes fifteen minutes.</p>
+    </div>
+    <div class="reveal" style="margin-top:36px;display:flex;gap:14px;flex-wrap:wrap">
+      <a href="#contact" class="btn btn-mag">Fill the Strategy Brief</a>
+      <a href="#contact" class="btn btn-ghost">Book a Discovery Call</a>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq" aria-label="FAQ">
+  <div class="col">
+    <div class="sh reveal">
+      <span class="eyebrow">FAQ</span>
+      <h2>Common <span class="g">questions.</span></h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="tFaq(this)">What formats do you write?<span class="faq-ico">+</span></button>
+        <div class="faq-a"><p>Facebook, Instagram, TikTok, and LinkedIn ad copy. Static ad creatives. Email sequences across all flow types. Long-form direct response sales pages. Video sales letter scripts. Advertorials and pre-sell pages. Research and strategy as a standalone deliverable. Every format begins with the same five-phase diagnostic before a word of copy is written.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="tFaq(this)">Do I need a designer or developer after receiving the deliverable?<span class="faq-ico">+</span></button>
+        <div class="faq-a"><p>For sales pages, advertorials, and pre-sell pages, no. Every page-based deliverable is a fully coded, production-ready HTML file. You receive a single file that opens in a browser and is ready to publish.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="tFaq(this)">What are the turnaround times?<span class="faq-ico">+</span></button>
+        <div class="faq-a"><p>Ad copy angle sets, ad creatives, and email sequences are delivered within three to four business days. Full sales pages, advertorials, and VSL scripts are delivered within five to seven business days. All timelines are confirmed before work begins and adjusted based on project scope and details confirmed during the brief review.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="tFaq(this)">How do I book a discovery call?<span class="faq-ico">+</span></button>
+        <div class="faq-a"><p>Fill the Strategy Brief first using the link in the contact section above. Once submitted, use the Calendly link to book your call. Calls are available Monday through Friday, 9 AM to 2 PM Pakistan Standard Time. Calls booked without a completed brief will not be confirmed.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="tFaq(this)">What is the five-phase process and how does it affect the copy?<span class="faq-ico">+</span></button>
+        <div class="faq-a"><p>Phase one extracts the brand's authentic voice. Phase two maps the buyer's awareness level, sophistication stage, and pain point hierarchy. Phase three selects the hook by audience match percentage. Phase four layers twelve persuasion elements across the copy in deliberate sequence. Phase five audits every deliverable across five criteria before delivery.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="tFaq(this)">Can I engage more than one format at once?<span class="faq-ico">+</span></button>
+        <div class="faq-a"><p>Yes. Each format has its own scope, its own price, and its own deliverable. Research conducted for one format in the same project informs the others without repeating from scratch. Each format is priced and justified individually so you know exactly what you are paying for at every stage.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="tFaq(this)">Do you work with brands outside Pakistan?<span class="faq-ico">+</span></button>
+        <div class="faq-a"><p>Yes. All work is conducted remotely and delivered in writing. DTC and ecommerce brands across English-language markets including the US, UK, Canada, and Australia are served. Discovery calls are available Monday through Friday, 9 AM to 2 PM Pakistan Standard Time.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer role="contentinfo">
+  <div class="wide">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <span class="foot-logo" style="font-size:1.625rem;color:var(--gold)">Saima Khalid</span>
+        <p style="font-weight:700;color:var(--t1);font-size:0.9375rem">Direct Response Copywriter &amp; Funnel Builder for DTC and Ecommerce Brands</p>
+      </div>
+      <div class="foot-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="#work">Sample Work</a></li>
+          <li><a href="#offers">Offers</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Book a Call</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:saimakhalid2873@gmail.com">saimakhalid2873@gmail.com</a></li>
+          <li><a href="https://linkedin.com/in/saima-khalid-59a7b4387" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://drive.google.com/drive/folders/1lYyMbQzCaRMAh7_r7S736LaoVqPNAcnK?usp=sharing" target="_blank" rel="noopener">Portfolio</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>&copy; 2026 Saima Khalid. All Rights Reserved.</p>
+      <p>Strategy. Copy. Coded HTML. One person. Full funnel.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ── NAV scroll darkening ───────────────────────────────────────────── */
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('dark', window.scrollY > 60);
+}, { passive: true });
+
+/* ── DRAWER ─────────────────────────────────────────────────────────── */
+const drawer  = document.getElementById('drawer');
+const overlay = document.getElementById('overlay');
+const burger  = document.getElementById('burger');
+function openDrawer()  { drawer.classList.add('open'); overlay.classList.add('show'); burger.setAttribute('aria-expanded','true'); document.body.style.overflow='hidden'; }
+function closeDrawer() { drawer.classList.remove('open'); overlay.classList.remove('show'); burger.setAttribute('aria-expanded','false'); document.body.style.overflow=''; }
+
+/* ── SCROLL REVEAL ──────────────────────────────────────────────────── */
+const revealObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObs.unobserve(e.target); } });
+}, { threshold: 0.08 });
+document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+
+/* ── STAT COUNTER ───────────────────────────────────────────────────── */
+function animateCount(el, target) {
+  let start = 0;
+  const step = ts => {
+    if (!start) start = ts;
+    const p = Math.min((ts - start) / 1200, 1);
+    el.textContent = Math.floor(p * target);
+    if (p < 1) requestAnimationFrame(step); else el.textContent = target;
+  };
+  requestAnimationFrame(step);
+}
+const countObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { animateCount(e.target, parseInt(e.target.dataset.count)); countObs.unobserve(e.target); } });
+}, { threshold: 0.5 });
+document.querySelectorAll('[data-count]').forEach(el => countObs.observe(el));
+
+/* ── PRICE ACKNOWLEDGMENT CHECKBOX ─────────────────────────────────── */
+function toggleBrief(cb) {
+  const btn = document.getElementById('briefBtn');
+  btn.style.opacity = cb.checked ? '1' : '.4';
+  btn.style.pointerEvents = cb.checked ? 'auto' : 'none';
+}
+
+/* ── AD CREATIVES LIGHTBOX ──────────────────────────────────────────── */
+const adImages = [
+  { src: 'images/img_1.png', alt: 'Ad Creative 1' },
+  { src: 'images/img_2.png', alt: 'Ad Creative 2' },
+  { src: 'images/img_3.png', alt: 'Ad Creative 3' },
+  { src: 'images/img_4.png', alt: 'Ad Creative 4' }
+];
+let adLightboxIndex = 0;
+const adLightboxEl   = document.getElementById('adLightbox');
+const adLightboxImg  = document.getElementById('adLightboxImg');
+const adLightboxCount= document.getElementById('adLightboxCount');
+
+function renderAdLightbox() {
+  const item = adImages[adLightboxIndex];
+  adLightboxImg.src = item.src;
+  adLightboxImg.alt = item.alt;
+  adLightboxCount.textContent = (adLightboxIndex + 1) + ' / ' + adImages.length;
+}
+function openAdLightbox(startIndex) {
+  adLightboxIndex = startIndex || 0;
+  renderAdLightbox();
+  adLightboxEl.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeAdLightbox() {
+  adLightboxEl.classList.remove('open');
+  document.body.style.overflow = '';
+}
+function adLightboxStep(dir) {
+  adLightboxIndex = (adLightboxIndex + dir + adImages.length) % adImages.length;
+  renderAdLightbox();
+}
+adLightboxEl.addEventListener('click', (e) => { if (e.target === adLightboxEl) closeAdLightbox(); });
+document.addEventListener('keydown', (e) => {
+  if (!adLightboxEl.classList.contains('open')) return;
+  if (e.key === 'Escape') closeAdLightbox();
+  if (e.key === 'ArrowRight') adLightboxStep(1);
+  if (e.key === 'ArrowLeft') adLightboxStep(-1);
+});
+
+/* ── FAQ ────────────────────────────────────────────────────────────── */
+function tFaq(btn) {
+  const item = btn.closest('.faq-item');
+  const ans  = item.querySelector('.faq-a');
+  const open = item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(el => { el.classList.remove('open'); el.querySelector('.faq-a').style.maxHeight = '0'; });
+  if (!open) { item.classList.add('open'); ans.style.maxHeight = ans.scrollHeight + 'px'; }
+}
+</script>
+</body>
+</html>
